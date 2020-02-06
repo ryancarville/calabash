@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src="/images/calabash_logo_social.jpg" alt="logo" />
       </header>
+      <article className="welcome-content">
+        <h2>Welcome to Calabash Villa</h2>
+        <p>
+          We are currently in the process of building the platform, but you can
+          view the current state of the villa via our Instagram account{" "}
+          <a
+            href="https://www.instagram.com/calabashvillabequia"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            here
+          </a>
+        </p>
+      </article>
     </div>
   );
 }
