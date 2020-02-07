@@ -47,9 +47,7 @@
   text-align: center;
   width: 100%;
   padding: 10px;
-
   font-size: 20px;
-  margin-top: 10px;
 }
 .welcome-content a {
   color: rgb(255, 136, 0);
@@ -63,7 +61,7 @@
 }
 .App section {
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,13 +71,11 @@
   .App-header img {
     width: 15%;
   }
-  .App section {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+
   .render-slides {
-    width: 80%;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 
   .welcome-content {
@@ -88,6 +84,5 @@
   }
   .welcome-content p {
     margin: 0;
-    margin-left: 10px;
   }
 }

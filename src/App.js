@@ -31,18 +31,10 @@ export default class App extends Component {
           <img src="/images/calabash_logo_social.jpg" alt="logo" />
         </header>
         <section>
-          <img
-            className={`render-slides ${this.state.fadeIn}`}
-            src={`/images/renders/${this.state.currImg}.jpg`}
-            alt="renders"
-            loading="lazy"
-          />
           <article className="welcome-content">
             <p>
               We are currently in the process of building the platform as well
-              as the villa! <br />
-              <br />
-              You can view the current state of the villa via our
+              as the villa! You can view the current state of the villa via our
               <br />
               <a
                 href="https://www.instagram.com/calabashvillabequia"
@@ -59,6 +51,12 @@ export default class App extends Component {
               </a>
             </p>
           </article>
+          <img
+            className={`render-slides ${this.state.fadeIn}`}
+            src={`/images/renders/${this.state.currImg}.jpg`}
+            alt="renders"
+            loading="lazy"
+          />
         </section>
       </div>
     );
