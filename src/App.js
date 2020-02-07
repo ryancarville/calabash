@@ -42,10 +42,10 @@ export default class App extends Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fab fa-instagram" /> Instagram account
+                <i className="fab fa-instagram" /> Instagram
               </a>
               <br />
-              or you can email us at
+              or if you have any inquiries, you can email us at
               <br />
               <a href="mailto:hello@calabashvillabequia.com?subject=Inquiry from website">
                 hello@calabashvillabequia.com
