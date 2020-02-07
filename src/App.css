@@ -1,27 +1,54 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bg-img {
   background-image: url("/images/calabash-bg.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1100px;
+  height: 200px;
+  margin: 0;
 }
 .App-header {
-  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.App-header img {
+  width: 225px;
   margin-left: auto;
   margin-right: auto;
 }
-.App-header img {
-  width: 100px;
-}
 
 .welcome-content {
-  position: fixed;
-  margin-top: 30px;
-  margin-left: 50px;
-  width: 550px;
-  color: white;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  color: rgb(98, 0, 255);
   font-size: 20px;
+  margin-top: 10px;
+}
+.welcome-content a {
+  color: rgb(0, 255, 42);
+}.welcome-content a:hover{
+  color:yellow
 }
 .App h2 {
   margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .bg-img {
+    height: 820px;
+  }
+  .welcome-content {
+    position: fixed;
+    margin-top: -250px;
+    margin-left: 150px;
+    text-align: left;
+    width: 30%;
+    color: white;
+  }
 }
