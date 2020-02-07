@@ -12,15 +12,14 @@ export default class App extends Component {
   startSlides = () => {
     setInterval(() => {
       this.setState({
-        currImg: this.state.currImg + 1,
-        fadeIn: "fadeIn"
+        currImg: this.state.currImg + 1
       });
       if (this.state.currImg > 9) {
         this.setState({
           currImg: 1
         });
       }
-    }, 4000);
+    }, 5000);
   };
   componentDidMount() {
     this.startSlides();
@@ -36,6 +35,7 @@ export default class App extends Component {
             className={`render-slides ${this.state.fadeIn}`}
             src={`/images/renders/${this.state.currImg}.jpg`}
             alt="renders"
+            loading="lazy"
           />
           <article className="welcome-content">
             <p>
