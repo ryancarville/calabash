@@ -17,9 +17,6 @@
   }
 }
 
-.fadeIn {
-  animation: fadeIn 5s infinite;
-}
 .App {
   margin-top: 5px;
   display: flex;
