@@ -33,8 +33,9 @@ export default class App extends Component {
         <section>
           <article className="welcome-content">
             <p>
-              We are currently in the process of building the platform as well
-              as the villa! You can view the current state of the villa via our
+              May 2020 Completion <br /> We are currently in the process of
+              building the platform as well as the villa! You can view the
+              current state of the villa via our
               <br />
               <a
                 href="https://www.instagram.com/calabashvillabequia"
