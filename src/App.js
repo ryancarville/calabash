@@ -54,8 +54,8 @@ export default class App extends Component {
               <br />
               or you can email us at
               <br />
-              <a href="mailto:calabashbequia@gmail.com?subject=Inquiry from website">
-                calabashbequia@gmail.com
+              <a href="mailto:hello@calabashvillabequia.com?subject=Inquiry from website">
+                hello@calabashvillabequia.com
               </a>
             </p>
           </article>
