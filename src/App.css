@@ -1,20 +1,42 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 4s infinite;
+}
 .App {
   margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.bg-img {
-  background-image: url("/images/calabash-bg.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 0;
+
+.render-slides {
+  background: center;
+  background-color: rgb(24, 19, 19);
+  width: 100%;
+  height: auto;
 }
 .App-header {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 .App-header img {
   width: 100%;
@@ -28,7 +50,7 @@
   text-align: center;
   width: 100%;
   padding: 10px;
-  color: rgb(98, 0, 255);
+
   font-size: 20px;
   margin-top: 10px;
 }
@@ -42,23 +64,33 @@
 .App h2 {
   margin: 0;
 }
-
+.App section {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (min-width: 700px) {
-  .bg-img {
-    height: 820px;
-  }
   .App-header img {
     width: 15%;
   }
-  .welcome-content {
-    position: fixed;
-    margin-top: -250px;
-    margin-left: 150px;
-    text-align: left;
-    width: 30%;
-    color: white;
+  .App section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
-  .welcome-content a {
-    color: rgb(217, 255, 0);
+  .render-slides {
+    width: 80%;
+  }
+
+  .welcome-content {
+    margin: 0px;
+    padding: 0;
+  }
+  .welcome-content p {
+    margin: 0;
+    margin-left: 10px;
   }
 }
