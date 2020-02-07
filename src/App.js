@@ -19,7 +19,7 @@ function App() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Instagram account
+            <i className="fab fa-instagram" /> Instagram account
           </a>{" "}
           or you can email us at{" "}
           <a href="mailto:hello@calabashvillabequia.com?subject=Inquiry from website">
