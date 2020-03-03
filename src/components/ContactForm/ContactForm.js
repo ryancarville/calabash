@@ -62,7 +62,6 @@ export default class ContactForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let data = this.state;
-    console.log(this.state);
     axios
       .post(`${API}`, data)
       .then(result => {

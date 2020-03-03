@@ -7,6 +7,7 @@ import Defender from "../Defender/Defender";
 import Gallery from "../Gallery/Gallery";
 import Reservations from "../Reservations/Reservations";
 import OurStory from "../OurStory/OurStory";
+import NotFound from "../NotFound/NotFound";
 export default function Router(props) {
   return (
     <Switch>
@@ -17,6 +18,7 @@ export default function Router(props) {
       <Route path="/gallery" component={Gallery} exact />
       <Route path="/reservations" component={Reservations} exact />
       <Route path="/our-story" component={OurStory} exact />
+      <Route component={NotFound} />
     </Switch>
   );
 }
