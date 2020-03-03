@@ -5,9 +5,6 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: POST");
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
-
-if (empty($_POST['fullName']) && empty($_POST['email']) && empty($_POST['arrivalDate']) && empty($_POST['departureDate'])) die();
-
 if ($_POST)
     {
     // set response code - 200 OK
