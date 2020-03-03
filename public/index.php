@@ -1,9 +1,7 @@
 <?php
-$allowedMethods = array(
-    'POST'
-);
+
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Methods: post");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 $rest_json = file_get_contents("php://input");

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./ContactForm.css";
-import axios from "axios";
+
 const API = "https://calabashvillabequia.com/index.php";
 export default class ContactForm extends Component {
   constructor(props) {
