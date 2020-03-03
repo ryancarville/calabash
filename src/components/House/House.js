@@ -45,7 +45,7 @@ export default function House(props) {
             highest standard and both offer spectacular ocean views.
           </p>
         </aside>
-        <aside id="penthouse-info" >
+        <aside id="penthouse-info">
           <img src="../images/plans/1.jpg" alt="plan1" className="plan-img" />
           <span>
             <h4>Penthouse</h4>
