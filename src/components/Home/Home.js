@@ -28,7 +28,7 @@ export default class Home extends Component {
         <article id="home-main">
           <figure className="home-figure">
             <img
-              src={`../../images/renders/${this.state.currImg}.jpg`}
+              src={`../images/renders/${this.state.currImg}.jpg`}
               alt=""
               className="home-image"
             />

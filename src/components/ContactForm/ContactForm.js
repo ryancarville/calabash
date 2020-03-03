@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./ContactForm.css";
 import axios from "axios";
-const API = "http://localhost:3000/sendEmail.php";
+const API = "https://calabashvillabequia.com/sendEmail.php";
 export default class ContactForm extends Component {
   constructor(props) {
     super(props);
