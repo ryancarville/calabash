@@ -1,8 +1,8 @@
 <?php
-header ("Access-Control-Allow-Origin: *");
-header ("Access-Control-Allow-Headers: Content-Type, Methods");
-header ("Content-Type: application/json");
-header ("Methods: post");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Content-Type: application/json");
+header("Access-Control-Allow-Methods: POST");
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
