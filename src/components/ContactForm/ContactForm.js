@@ -2,25 +2,28 @@ import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./ContactForm.css";
-
+import axios from "axios";
+const API = "http://localhost:3000/sendEmail.php";
 export default class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
       fullName: "",
       email: "",
-      startDate: "",
-      endDate: "",
+      arrivalDate: "",
+      departureDate: "",
       defender: false,
-      message: ""
+      message: "",
+      mailSent: false,
+      error: null
     };
   }
   resetState = () => {
     this.setState({
       fullName: "",
       email: "",
-      startDate: "",
-      endDate: "",
+      arrivalDate: "",
+      departureDate: "",
       defender: false,
       message: ""
     });
@@ -38,12 +41,12 @@ export default class ContactForm extends Component {
 
   handleStartDate = date => {
     this.setState({
-      startDate: date
+      arrivalDate: date
     });
   };
   handleEndDate = date => {
     this.setState({
-      endDate: date
+      departureDate: date
     });
   };
   handleDefender = () => {
@@ -58,11 +61,25 @@ export default class ContactForm extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-    fetch();
+    console.log(this.state);
+    axios({
+      method: "post",
+      url: `${API}`,
+      headers: { "content-type": "application/json" },
+      data: this.state
+    })
+      .then(result => {
+        console.log(result);
+        this.setState({
+          mailSent: result.data.sent
+        });
+      })
+      .catch(error => this.setState({ error: error.message }));
   };
   render() {
     return (
-      <form action="../sendEmail.php" id="booking-form">
+      <form id="booking-form">
+        <div>{this.state.error}</div>
         <span>
           <header>
             <h2>Booking Request Form</h2>
@@ -88,17 +105,17 @@ export default class ContactForm extends Component {
           <DatePicker
             placeholderText="Arrival Date*"
             name="arrivalDate"
-            selected={this.state.startDate}
+            selected={this.state.arrivalDate}
             onChange={this.handleStartDate}
-            value={this.state.startDate}
+            value={this.state.arrivalDate}
             required
           />
           <DatePicker
             placeholderText="Departure Date*"
             name="departureDate"
-            selected={this.state.endDate}
+            selected={this.state.departureDate}
             onChange={this.handleEndDate}
-            value={this.state.endDate}
+            value={this.state.departureDate}
             required
           />
           <span id="defender-checkbox">
@@ -121,12 +138,22 @@ export default class ContactForm extends Component {
             onChange={this.handleMessage}
           ></textarea>
           <span id="contact-form-buttons">
-            <button type="submit">Send</button>
+            <button
+              type="submit"
+              onClick={e => {
+                this.handleSubmit(e);
+              }}
+            >
+              Send
+            </button>
             <button type="button" onClick={this.resetState}>
               Clear Form
             </button>
           </span>
         </span>
+        <div>
+          {this.state.mailSent && <div>Thank you for contacting us.</div>}
+        </div>
       </form>
     );
   }
