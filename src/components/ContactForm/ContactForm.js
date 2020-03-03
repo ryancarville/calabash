@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./ContactForm.css";
 
-const API = "https://calabashvillabequia.com/index.php";
+const API = "https://powerful-garden-10065.herokuapp.com/calabashEmail/send";
 export default class ContactForm extends Component {
   constructor(props) {
     super(props);
