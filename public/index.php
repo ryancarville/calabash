@@ -37,4 +37,4 @@ if ($_POST)
   // tell the user about error
   echo json_encode(["sent" => false, "message" => "Something went wrong"]);
 } 
-?> 
+?>
