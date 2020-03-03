@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./ContactForm.css";
 import axios from "axios";
-const API = "https://calabashvillabequia.com/index.php";
+const API = "https://calabashvillabequia.com/sendEmail.php";
 export default class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -62,6 +62,7 @@ export default class ContactForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let data = this.state;
+    
     axios
       .post(`${API}`, data)
       .then(result => {
