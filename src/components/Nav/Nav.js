@@ -41,7 +41,7 @@ class Nav extends Component {
     return (
       <>
         <Link to="/" onClick={this.closeMenu} id="logo">
-          <img src="../images/calabash_logo_social.jpg" alt="logo" />
+          <img src="/images/calabash_logo_social.jpg" alt="logo" />
         </Link>
         <nav
           className="nav"
