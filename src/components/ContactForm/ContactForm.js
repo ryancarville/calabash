@@ -67,7 +67,8 @@ export default class ContactForm extends Component {
       headers: {
         "content-type": "application/json"
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
+      mode: "cors"
     })
       .then(result => {
         console.log(result);
