@@ -1,0 +1,162 @@
+#the-island {
+  opacity: 0;
+  animation: fadeIn 0.5s 0.5s forwards;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#the-island aside {
+  width: 100%;
+  display: block;
+}
+#the-island-intro-map {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 20px;
+}
+#bequia-map {
+  width: 100%;
+}
+#the-island-geo {
+  width: 100%;
+}
+#flag-wrap {
+  width: 100%;
+  display: block;
+}
+#flag {
+  width: 100%;
+}
+#the-island-beaches {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+#the-island-dining {
+  background-color: yellow;
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#the-island-todo {
+  background-color: limegreen;
+  color: white;
+}
+#the-island-todo span {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+#the-island-todo span aside {
+  padding: 20px;
+}
+.padding50 {
+  padding: 20px;
+}
+#the-island-nav {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  #the-island {
+    opacity: 0;
+    animation: fadeIn 0.5s 0.5s forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #the-island aside {
+    width: 100%;
+    display: block;
+  }
+  #the-island-intro-map {
+    width: 40%;
+    text-align: right;
+    float: right;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+  #bequia-map {
+    width: 100%;
+  }
+  #the-island-geo {
+    width: 100%;
+  }
+  #flag-wrap {
+    width: 20%;
+    display: block;
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+  #flag {
+    width: 100%;
+  }
+  #the-island-beaches {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: blue;
+    color: white;
+  }
+  #the-island-beaches span p {
+    padding-right: 50px;
+  }
+  #the-island-dining {
+    background-color: yellow;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #the-island-dining p {
+    padding-right: 50px;
+  }
+  #the-island-todo {
+    background-color: limegreen;
+    color: white;
+  }
+  #the-island-todo span {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #the-island-todo span aside {
+    padding: 20px;
+  }
+  .padding50 {
+    padding: 50px;
+  }
+  #the-island-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+  }
+  #the-island-nav li a {
+    text-decoration: none;
+    color: limegreen;
+    font-size: 18px;
+  }
+  #the-island-nav li a:hover {
+    color: blue;
+  }
+  .island-nav-relative {
+    position: relative;
+  }
+  .island-nav-fixed {
+    position: fixed;
+    top: 0;
+  }
+}

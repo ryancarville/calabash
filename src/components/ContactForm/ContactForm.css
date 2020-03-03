@@ -1,0 +1,169 @@
+#booking-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: blue;
+  color: white;
+}
+#booking-form span {
+  width: 100%;
+  padding: 10px;
+}
+#booking-form span h2 {
+  margin-top: 0;
+  float: left;
+}
+#booking-form input {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid yellow;
+  background-color: transparent;
+  color: white;
+}
+#booking-form input::placeholder {
+  color: white;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+#defender-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 20px;
+  padding: 0px;
+  height: 35px;
+}
+#defender-checkbox input {
+  width: auto;
+  margin-top: 10px;
+}
+#booking-form textarea {
+  width: 100%;
+  height: 200px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+}
+#booking-form textarea::placeholder {
+  color: white;
+}
+#contact-form-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+#booking-form button {
+  width: 40%;
+  height: 55px;
+  padding: 0px;
+  font-size: 18px;
+  background-color: yellow;
+  border-radius: 100px;
+  color: blue;
+  cursor: pointer;
+  border: none;
+}
+#booking-form button:hover {
+  background-color: limegreen;
+  color: yellow;
+}
+
+@media only screen and (min-width: 700px) {
+  #booking-form {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: blue;
+    color: white;
+  }
+  #booking-form span {
+    width: 100%;
+    padding: 10px;
+  }
+  #booking-form span h2 {
+    margin-top: 0;
+    float: left;
+  }
+  #booking-form input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid yellow;
+    background-color: transparent;
+    color: white;
+  }
+  #booking-form input::placeholder {
+    color: white;
+  }
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  #defender-checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 20px;
+    padding: 0px;
+    height: 35px;
+  }
+  #defender-checkbox input {
+    width: auto;
+    margin-top: 10px;
+  }
+  #booking-form textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+  }
+  #booking-form textarea::placeholder {
+    color: white;
+  }
+  #contact-form-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  #booking-form button {
+    width: 30%;
+    height: 35px;
+    padding: 0px;
+    font-size: 18px;
+    background-color: yellow;
+    border-radius: 100px;
+    color: blue;
+    cursor: pointer;
+    border: none;
+  }
+  #booking-form button:hover {
+    background-color: limegreen;
+    color: yellow;
+  }
+}

@@ -1,88 +1,13 @@
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.App {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.render-slides {
-  background: center;
-  background-color: rgb(24, 19, 19);
-  width: 100%;
-  height: auto;
-}
 .App-header {
   width: 100%;
-  text-align: center;
-}
-.App-header img {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-.welcome-content {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-  font-size: 20px;
-}
-.welcome-content a {
-  color: rgb(255, 136, 0);
-  text-decoration: none;
-}
-.welcome-content a:hover {
-  color: rgb(17, 0, 255);
-}
-.App h2 {
-  margin: 0;
-}
-.App section {
-  width: 100%;
-  padding: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
   align-items: center;
 }
 @media only screen and (min-width: 700px) {
-  .App-header img {
-    width: 15%;
-  }
-
-  .render-slides {
-    width: 70%;
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-
-  .welcome-content {
-    margin: 0px;
-    padding: 0;
-  }
-  .welcome-content p {
-    margin: 0;
+  .App-header {
+    flex-direction: row;
+    align-items: center;
   }
 }

@@ -1,0 +1,131 @@
+#house-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.5s 0.5s forwards;
+}
+.downArrow {
+  padding: 20px;
+  font-size: 3em;
+  animation: downBy25 1s 0.5s ease-in-out;
+}
+#the-house-intro {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.image-gallery {
+  width: 100%;
+}
+#house-sec article aside {
+  width: 100%;
+  margin: 0;
+}
+
+#house-sec article aside header h2 {
+  padding: 0px;
+  margin: 0;
+}
+#house-intro {
+  padding: 20px;
+}
+
+.plan-img {
+  width: 100%;
+}
+
+#penthouse-info {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#penthouse-info span h4 {
+  text-align: center;
+}
+#penthouse-info ul {
+  list-style: none;
+  padding: 20px;
+}
+#garden-info {
+  background-color: limegreen;
+  color: white;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+#garden-info span h4 {
+  text-align: center;
+}
+#garden-info ul {
+  list-style: none;
+  padding: 20px;
+}
+@media only screen and (min-width: 700px) {
+  #house-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s 0.5s forwards;
+  }
+  .downArrow {
+    padding: 20px;
+    font-size: 3em;
+    animation: downBy25 1s 0.5s ease-in-out;
+  }
+  #the-house-intro {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .image-gallery {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #house-sec article aside {
+    width: 100%;
+    margin: 0;
+  }
+
+  #house-sec article aside header h2 {
+    padding: 0px;
+    margin: 0;
+  }
+  #house-intro {
+    padding: 50px;
+  }
+
+  .plan-img {
+    width: 50%;
+  }
+
+  #penthouse-info {
+    background-color: blue;
+    color: white;
+    flex-direction: row;
+  }
+
+  #penthouse-info ul {
+    list-style: none;
+  }
+  #garden-info {
+    background-color: limegreen;
+    color: white;
+    flex-direction: row;
+  }
+  #garden-info span {
+    padding: 50px;
+  }
+  #garden-info ul {
+    list-style: none;
+  }
+}

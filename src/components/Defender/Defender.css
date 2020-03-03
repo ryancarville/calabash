@@ -1,0 +1,88 @@
+#defender-intro {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 133, 40);
+  opacity: 0;
+  animation: fadeIn 0.5s 0.5s forwards;
+}
+
+#defender-intro img {
+  display: none;
+}
+
+#defender-intro aside {
+  width: 100%;
+  color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+#defender-intro aside h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+}
+#defender-intro aside a {
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+#about-the-defender {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+  #defender-intro {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 133, 40);
+    opacity: 0;
+    animation: fadeIn 0.5s 0.5s forwards;
+  }
+
+  #defender-intro img {
+    margin: 0;
+    width: 50%;
+    display: block;
+  }
+
+  #defender-intro aside {
+    width: 100%;
+    color: white;
+    padding: 50px;
+    margin-top: 10px;
+  }
+  #defender-intro aside h1 {
+    font-size: 90px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 0;
+  }
+  #defender-intro aside a {
+    float: right;
+    cursor: pointer;
+    display: block;
+  }
+  #about-the-defender {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
