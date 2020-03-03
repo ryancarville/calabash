@@ -63,7 +63,7 @@ export default class ContactForm extends Component {
     e.preventDefault();
     let data = this.state;
     fetch(`${API}`, {
-      method: "post",
+      method: "POST",
       headers: {
         "content-type": "application/json"
       },
