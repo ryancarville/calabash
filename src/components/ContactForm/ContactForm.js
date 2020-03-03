@@ -74,9 +74,16 @@ export default class ContactForm extends Component {
       .catch(error => this.setState({ error: error.message }));
   };
   render() {
-    return (
+    return this.state.error ? (
+      <div style={{ textAlign: "center" }}>
+        We are sorry for the inconvenience, but something went wrong with your
+        submission. Please email us at{" "}
+        <a href="mailto:hello@calabashvillabequia?subject=Website Enquiry">
+          hello@calabashvillabequia.com
+        </a>
+      </div>
+    ) : (
       <form id="booking-form">
-        <div>{this.state.error}</div>
         <span>
           <header>
             <h2>Booking Request Form</h2>
