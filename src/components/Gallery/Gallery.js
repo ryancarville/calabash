@@ -14,13 +14,15 @@ export default function Gallery(props) {
           @calabashvillabequia
         </a>
       </header>
+      <br />
+
       <iframe
-        src="//lightwidget.com/widgets/aab25989ef26501b896b9f68eb14ecec.html"
-        id="instagram-gallery"
+        src="https://cdn.lightwidget.com/widgets/58806c532ffb50589554fa3898d2d732.html"
         scrolling="no"
         allowtransparency="true"
-        class="lightwidget-widget"
+        className="lightwidget-widget"
         title="insta-gallery"
+        id="instagram-gallery"
       ></iframe>
     </section>
   );

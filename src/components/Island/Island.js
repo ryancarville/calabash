@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import map from './images/map.jpg'
-import flag from './images/flag.png'
+import map from "./images/map.jpg";
+import flag from "./images/flag.png";
 import "./Island.css";
 export default class Island extends Component {
   constructor(props) {
@@ -297,10 +297,9 @@ export default class Island extends Component {
             <header>
               <h2>Food & Drink</h2>
               <p>
-                Hospitality is in Bequia’s DNA. From Port Elizabeth’s buzzing
-                harbour front to the sleepier shores of Friendship Bay, here’s a
-                list of the best bars and restaurants that will develop a taste
-                for island life.
+                Food, drink and sun. What could be better? Here is a list of the
+                most popular spots on island for you to wet your whistle, tickle
+                your taste buds and slide into the island lifestyle.
               </p>
             </header>
             <aside>
