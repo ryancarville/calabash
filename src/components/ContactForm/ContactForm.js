@@ -65,11 +65,10 @@ export default class ContactForm extends Component {
     fetch(`${API}`, {
       method: "POST",
       headers: {
-        "content-type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "content-type": "application/json"
       },
       body: JSON.stringify(data),
-      mode: "cors"
+      mode: "no-cors"
     })
       .then(result => {
         console.log(result);

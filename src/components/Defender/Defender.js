@@ -1,21 +1,23 @@
 import React from "react";
 import "./Defender.css";
 import ImageGallery from "react-image-gallery";
+import img1 from "./images/1.jpg";
+import img2 from "./images/2.jpg";
 const images = [
   {
-    original: "../images/defender/1.jpg",
-    thumbnail: "../images/defender/1.jpg"
+    original: img1,
+    thumbnail: img1
   },
   {
-    original: "../images/defender/2.jpg",
-    thumbnail: "../images/defender/2.jpg"
+    original: img2,
+    thumbnail: img2
   }
 ];
 export default function Defender(porps) {
   return (
     <section id="defender-sec">
       <article id="defender-intro">
-        <img src="../images/defender/1.jpg" alt="defender-1" />
+        <img src={img1} alt="defender-1" />
 
         <aside>
           <h1>

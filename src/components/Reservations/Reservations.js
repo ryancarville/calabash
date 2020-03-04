@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../ContactForm/ContactForm";
 import { Link } from "react-router-dom";
+import palms from './images/palms.jpeg'
 import "./Reservations.css";
 import { Component } from "react";
 export default class Reservations extends Component {
@@ -20,6 +21,7 @@ export default class Reservations extends Component {
     return (
       <section id="res-sec">
         <header id="palm-img">
+          <img src={palms} alt="palms"/>
           <aside id="res-intro">
             <h2>Rates + Reservations</h2>
             <p>

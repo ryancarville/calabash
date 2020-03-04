@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import map from './images/map.jpg'
+import flag from './images/flag.png'
 import "./Island.css";
 export default class Island extends Component {
   constructor(props) {
@@ -63,7 +65,7 @@ export default class Island extends Component {
         <article className="padding50">
           <span id="the-island-intro-map">
             <h2>Bequia: Island of the Clouds</h2>
-            <img src="../images/bequia/map.jpg" alt="map" id="bequia-map" />
+            <img src={map} alt="map" id="bequia-map" />
             <i style={{ fontSize: 12 }}>
               Hand drawn map of Bequia by Xandra circa 1979
             </i>
@@ -112,7 +114,7 @@ export default class Island extends Component {
             <br />
             <h2>History</h2>
             <span id="flag-wrap">
-              <img src="../images/bequia/flag.png" alt="flag" id="flag" />
+              <img src={flag} alt="flag" id="flag" />
               <br />
               <i style={{ fontSize: 12 }}>
                 Official Flag of Bequia, Saint Vincent and The Grenadines

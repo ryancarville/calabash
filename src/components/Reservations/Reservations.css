@@ -5,11 +5,13 @@
   animation: fadeIn 0.5s 0.5s forwards;
 }
 #palm-img {
-  background-image: url("/images/reservations/palms.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+}
+#palm-img img {
+  width: 100%;
 }
 #res-sec header {
   text-align: center;
@@ -113,12 +115,11 @@
     animation: fadeIn 0.5s 0.5s forwards;
   }
   #palm-img {
-    background-image: url("/images/reservations/palms.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-
+    flex-direction: row;
     height: 300px;
+  }
+  #palm-img img {
+    width: 60%;
   }
   #res-sec header {
     text-align: center;
@@ -171,8 +172,8 @@
     padding-left: 10px;
   }
   #low-season {
-  margin-top: 0px;
-}
+    margin-top: 0px;
+  }
   #res-calender {
     width: 100%;
     height: 600px;

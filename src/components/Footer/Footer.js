@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "./images/calabash_logo_social.jpg";
 import "./Footer.css";
 
 export default class Footer extends Component {
@@ -29,11 +30,7 @@ export default class Footer extends Component {
       <footer id="footer">
         <article id="footer-contact-info">
           <aside>
-            <img
-              src="../images/calabash_logo_social.jpg"
-              alt="logo"
-              id="footer-logo"
-            />
+            <img src={logo} alt="logo" id="footer-logo" />
 
             <span>
               <i className="fas fa-mobile-alt" /> Bequia: +1(784)432-6679

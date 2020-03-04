@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import defender from "./images/defender/2.jpg";
+import island from "./images/island/bequia-image.jpg";
+import Slideshow from "../Slideshow/Slideshow";
 import "./Home.css";
 
 export default class Home extends Component {
@@ -26,13 +29,7 @@ export default class Home extends Component {
     return (
       <section id="home-sec">
         <article id="home-main">
-          <figure className="home-figure">
-            <img
-              src={`../images/renders/${this.state.currImg}.jpg`}
-              alt=""
-              className="home-image"
-            />
-          </figure>
+          <Slideshow autoPlay={true} />
           <a href="#home-house">
             <i className="fas fa-angle-double-down downArrow" />
           </a>
@@ -85,7 +82,7 @@ export default class Home extends Component {
               Check It Out
             </Link>
           </aside>
-          <div id="home-the-defender-img"></div>
+          <img src={defender} id="home-the-defender-img" alt="defender"></img>
         </article>
         <article id="home-bequia">
           <aside>
@@ -130,11 +127,7 @@ export default class Home extends Component {
             </span>
           </aside>
           <figure>
-            <img
-              src="../images/bequia/bequia-image.jpg"
-              alt="bequia"
-              id="home-bequia-img"
-            />
+            <img src={island} alt="bequia" id="home-bequia-img" />
           </figure>
         </article>
         <article id="home-our-story">

@@ -1,5 +1,7 @@
 import React from "react";
 import Slideshow from "../Slideshow/Slideshow";
+import plan1 from "./images/plans/1.jpg";
+import plan2 from "./images/plans/2.jpg";
 import "./House.css";
 
 export default function House(props) {
@@ -46,7 +48,7 @@ export default function House(props) {
           </p>
         </aside>
         <aside id="penthouse-info">
-          <img src="../images/plans/1.jpg" alt="plan1" className="plan-img" />
+          <img src={plan1} alt="plan1" className="plan-img" />
           <span>
             <h4>Penthouse</h4>
             <ul>
@@ -102,7 +104,7 @@ export default function House(props) {
               <li>Turkish Beach Towels</li>
             </ul>
           </span>
-          <img src="../images/plans/2.jpg" alt="plan1" className="plan-img" />
+          <img src={plan2} alt="plan1" className="plan-img" />
         </aside>
       </article>
     </section>

@@ -1,11 +1,12 @@
 import React from "react";
 import "./OurStory.css";
+import us from './images/1.jpg'
 export default function About(props) {
 
   return (
     <section id="about-sec">
       <span id="our-story-footnote">
-        <img src="../images/ourStory/1.jpg" alt="house" />
+        <img src={us} alt="house" />
         <i style={{ fontSize: 14 }}>
           Ryan and Zeenath on the deck of Casa Rosaline on their first Christmas
           trip as a couple

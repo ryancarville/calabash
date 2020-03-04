@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "./images/calabash_logo_social.jpg";
 import "./Nav.css";
 
 class Nav extends Component {
@@ -41,7 +42,7 @@ class Nav extends Component {
     return (
       <>
         <Link to="/" onClick={this.closeMenu} id="logo">
-          <img src="./images/calabash_logo_social.jpg" alt="logo" />
+          <img src={logo} alt="logo" />
         </Link>
         <nav
           className="nav"
