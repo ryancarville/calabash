@@ -1,8 +1,7 @@
 import React from "react";
 import "./OurStory.css";
-import us from './images/1.jpg'
+import us from "./images/1.jpg";
 export default function About(props) {
-
   return (
     <section id="about-sec">
       <span id="our-story-footnote">
@@ -15,28 +14,28 @@ export default function About(props) {
       <h3>A match made in paradise...with a little help from Tinder</h3>
 
       <p>
-        Ryan's first introduction to the unheard of island of Bequia was via his
-        uncle James Carville who built the first expat house in Friendship Bay
-        in 1968. As a child he was fascinated by the tales of a palm lined 7
-        mile piece of land in the farthest reaches of the Caribbean Sea. It was
-        then that he decided one day, he would travel to this enchanted island.
+        Ryan's first introduction to the island of Bequia was via his uncle
+        James Carville who built the first expat house in Friendship Bay in
+        1968. As a child he was fascinated by the tales of a palm lined 7 mile
+        piece of land in the farthest reaches of the Caribbean Sea. It was then
+        that he decided one day, he would travel to this enchanted island.
       </p>
       <p>
-        Zeenath came upon the island after a exhausting search of a midway point
-        between San Francisco and Zurich as a meeting point for her and her two
-        best friends. The only criteria they had was to find an island which no
-        known resorts. A true 'deserted' island. The second she discovered the
-        name "Bequia" she was instantly drawn to it. They was some sort of magic
-        in the name.
+        Zeenath came upon the island after an exhausting search for a meeting
+        point for her and her two best friends between San Francisco and Zurich.
+        The only criteria they had was to find an island which had no known
+        resorts. A true 'deserted' island. The second she discovered the name
+        "Bequia", she was instantly drawn to it. There was some sort of magic in
+        the name.
       </p>
       <p>
-        Christmas 2013 Zeenath and Ryan both packed and set off one a trip that
-        would change their lives forever. Zeenath first stayed at Casa Rosaline
-        on Lower Bay. The only on beach property on the island. It was absolute
-        paradise. More than she could have ever imagined. Ryan finally reached
-        the home he had been imaging his entire life. It was almost like a
-        dream. The house tucked away in the jungle towering above the sea. He
-        could feel the stories coming to life around him.
+        Christmas 2013 Zeenath and Ryan both packed separately and set off on a
+        trip that would change their lives forever. Zeenath first stayed at Casa
+        Rosaline on Lower Bay. The only beach front property on the island. It
+        was absolute paradise. Ryan finally reached the home he had been imaging
+        his entire life. It was almost like a dream. The house tucked away in
+        the jungle towering above the sea. He could feel the stories coming to
+        life around him.
       </p>
       <p>
         That Christmas was magical. New Years (or Old Years as it's called on

@@ -1,8 +1,8 @@
 #about-sec {
-  background-color: limegreen;
+  background-color: rgb(255, 199, 140);
   width: 100%;
   padding: 20px;
-  color: white;
+  color: rgb(87, 87, 87);
   opacity: 0;
   animation: fadeIn 0.5s 0.5s forwards;
 }
@@ -23,10 +23,9 @@
 }
 @media only screen and (min-width: 700px) {
   #about-sec {
-    background-color: limegreen;
     width: 100%;
     padding: 50px;
-    color: white;
+
     opacity: 0;
     animation: fadeIn 0.5s 0.5s forwards;
   }

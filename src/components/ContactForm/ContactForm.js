@@ -66,7 +66,8 @@ export default class ContactForm extends Component {
     fetch(`${API}`, {
       method: "POST",
       headers: {
-        "content-type": "application/json"
+        "content-type": "application/json",
+        "Access-Control-Allow-Origin": "https://calabashvillabequia.com"
       },
       body: JSON.stringify(data)
     })

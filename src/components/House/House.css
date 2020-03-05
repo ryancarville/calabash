@@ -38,7 +38,7 @@
 }
 
 #penthouse-info {
-  background-color: blue;
+  background-color: rgb(109, 189, 255);
   color: white;
   display: flex;
   flex-direction: column;
@@ -52,9 +52,8 @@
   padding: 20px;
 }
 #garden-info {
-  background-color: limegreen;
-  color: white;
-
+  background-color: rgb(127, 255, 127);
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -109,8 +108,6 @@
   }
 
   #penthouse-info {
-    background-color: blue;
-    color: white;
     flex-direction: row;
   }
 
@@ -118,8 +115,6 @@
     list-style: none;
   }
   #garden-info {
-    background-color: limegreen;
-    color: white;
     flex-direction: row;
   }
   #garden-info span {
