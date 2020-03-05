@@ -67,7 +67,7 @@ export default class ContactForm extends Component {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        "Access-Control-Allow-Origin": "https://calabashvillabequia.com"
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(data)
     })
