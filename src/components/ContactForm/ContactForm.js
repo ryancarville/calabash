@@ -62,13 +62,13 @@ export default class ContactForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let data = this.state;
+    console.log(JSON.stringify(data));
     fetch(`${API}`, {
       method: "POST",
       headers: {
         "content-type": "application/json"
       },
-      body: JSON.stringify(data),
-      mode: "no-cors"
+      body: JSON.stringify(data)
     })
       .then(result => {
         console.log(result);
@@ -80,9 +80,9 @@ export default class ContactForm extends Component {
   };
   render() {
     return this.state.error ? (
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", marginTop: "5%" }}>
         We are sorry for the inconvenience, but something went wrong with your
-        submission. Please email us at{" "}
+        submission. <br /> Please email us at{" "}
         <a href="mailto:hello@calabashvillabequia?subject=Website Enquiry">
           hello@calabashvillabequia.com
         </a>
