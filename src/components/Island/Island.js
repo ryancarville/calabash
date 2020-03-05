@@ -416,71 +416,65 @@ export default class Island extends Component {
             <aside>
               <h3>Laura's</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Serving not only a delicious fresh menu of local cuisine and
+                home made pasta, but also on Wednesday and Friday home to the
+                best dance floor on the island. With a very friendly staff and
+                cliental, you are sure to walk away with a full belly, tiered
+                feet and a few new friends.
               </p>
             </aside>
             <aside>
               <h3>Chameleon Cafe</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Newest cafe's, Chameleon is located in the center of the harbor.
+                Serving up a full breakfast and lunch menu with one of the only
+                top end espresso machines on island. Great place to take a
+                little break from the energy filled harbor and good for people
+                watching.
               </p>
             </aside>
             <aside>
               <h3>Gingerbread Cafe</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Cute waterfront cafe that serves taste breakfast and snack. Sit
+                back in a lounge chair and enjoy a taste treat with a nice cup
+                of joe.
               </p>
             </aside>
             <aside>
               <h3>Fig Tree</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Mrs. Johnson knows her stuff! Fig Tree is a long standing
+                establishment that has made their name with its delicious local
+                dishes. Hosting live music most night, great for a low key
+                evening with dancing and flavorful dishes.
               </p>
             </aside>
             <aside>
               <h3>Whaleboner</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Known for their delicious local cuisine, Whaleboner also possess
+                a friendly and helpful staff that creates a lovely atmosphere.
+                Grab a Hairoun and a fish roti then enjoy the sunset on the
+                harbor from their water side deck.
               </p>
             </aside>
             <aside>
               <h3>Dawns Cafe</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Dawn is a local living legend. Her food speaks for it self.
+                Excellent for a beach side lunch of freshly made to order
+                caribbean cuisine. Tucked just off the main road at the end of
+                Lower Bay.
               </p>
             </aside>
             <aside>
               <h3>Bar One</h3>
               <p>
-                Sister to an equally popular hotel on Mustique, the BBQ and
-                Creole nights are wonderful. This traditional plantation
-                restaurant focusses on ingredients that are home grown, locally
-                sourced and is a favourite with both visitors and local island
-                residents for breakfast, lunch and dinner.
+                Bequia hottest spot for sundowners. Bar One's unparalleled views
+                and unique experience is a must do when on island. Grab a water
+                taxi from any of the docks for $5EC to enjoy the best cocktails
+                in the Grenadines.
               </p>
             </aside>
           </span>
