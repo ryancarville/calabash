@@ -117,6 +117,7 @@
   #palm-img {
     flex-direction: row;
     height: 300px;
+    width: 100%;
   }
   #palm-img img {
     width: 60%;

@@ -67,104 +67,118 @@ export default class ContactForm extends Component {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://calabashvillabequia.com"
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
+      mode: "cors"
     })
       .then(result => {
         console.log(result);
-        this.setState({
-          mailSent: result.data.sent
-        });
+        if (!result.ok) {
+          this.setState({
+            error: result.error
+          });
+        } else {
+          this.setState({
+            mailSent: result.ok
+          });
+        }
       })
       .catch(error => this.setState({ error: error.message }));
   };
   render() {
-    return this.state.error ? (
-      <div style={{ textAlign: "center", marginTop: "5%" }}>
-        We are sorry for the inconvenience, but something went wrong with your
-        submission. <br /> Please email us at{" "}
-        <a href="mailto:hello@calabashvillabequia?subject=Website Enquiry">
-          hello@calabashvillabequia.com
-        </a>
-      </div>
-    ) : (
-      <form id="booking-form">
-        <span>
-          <header>
-            <h2>Booking Request Form</h2>
-          </header>
-          <input
-            type="text"
-            name="fullName"
-            onChange={this.handleFullName}
-            placeholder="Full Name*"
-            value={this.state.fullName}
-            required
-          />
+    return (
+      <>
+        {this.state.error ? (
+          <div style={{ textAlign: "center", marginTop: "5%" }}>
+            We are sorry for the inconvenience, but something went wrong with
+            your submission. <br /> Please email us at{" "}
+            <a href="mailto:hello@calabashvillabequia?subject=Website Enquiry">
+              hello@calabashvillabequia.com
+            </a>
+          </div>
+        ) : null}
+        {!this.state.mailSent ? (
+          <form id="booking-form">
+            <span>
+              <header>
+                <h2>Booking Request Form</h2>
+              </header>
+              <input
+                type="text"
+                name="fullName"
+                onChange={this.handleFullName}
+                placeholder="Full Name*"
+                value={this.state.fullName}
+                required
+              />
 
-          <input
-            type="email"
-            name="email"
-            onChange={this.handleEmail}
-            placeholder="Email Address*"
-            value={this.state.email}
-            required
-          />
+              <input
+                type="email"
+                name="email"
+                onChange={this.handleEmail}
+                placeholder="Email Address*"
+                value={this.state.email}
+                required
+              />
 
-          <DatePicker
-            placeholderText="Arrival Date*"
-            name="arrivalDate"
-            selected={this.state.arrivalDate}
-            onChange={this.handleStartDate}
-            value={this.state.arrivalDate}
-            required
-          />
-          <DatePicker
-            placeholderText="Departure Date*"
-            name="departureDate"
-            selected={this.state.departureDate}
-            onChange={this.handleEndDate}
-            value={this.state.departureDate}
-            required
-          />
-          <span id="defender-checkbox">
-            <label htmlFor="defender">
-              Check if interested in the Defender?
-            </label>
-            <input
-              type="checkbox"
-              name="defender"
-              onChange={this.handleDefender}
-            />
-          </span>
-          <i style={{ fontSize: 14 }}>* denotes required fields</i>
-        </span>
-        <span>
-          <textarea
-            name="message"
-            placeholder="Enter message here..."
-            value={this.state.message}
-            onChange={this.handleMessage}
-          ></textarea>
-          <span id="contact-form-buttons">
-            <button
-              type="submit"
-              onClick={e => {
-                this.handleSubmit(e);
-              }}
-            >
-              Send
-            </button>
-            <button type="button" onClick={this.resetState}>
-              Clear Form
-            </button>
-          </span>
-        </span>
-        <div>
-          {this.state.mailSent && <div>Thank you for contacting us.</div>}
-        </div>
-      </form>
+              <DatePicker
+                placeholderText="Arrival Date*"
+                name="arrivalDate"
+                selected={this.state.arrivalDate}
+                onChange={this.handleStartDate}
+                value={this.state.arrivalDate}
+                required
+              />
+              <DatePicker
+                placeholderText="Departure Date*"
+                name="departureDate"
+                selected={this.state.departureDate}
+                onChange={this.handleEndDate}
+                value={this.state.departureDate}
+                required
+              />
+              <span id="defender-checkbox">
+                <label htmlFor="defender">
+                  Check if interested in the Defender?
+                </label>
+                <input
+                  type="checkbox"
+                  name="defender"
+                  onChange={this.handleDefender}
+                />
+              </span>
+              <i style={{ fontSize: 14 }}>* denotes required fields</i>
+            </span>
+            <span>
+              <textarea
+                name="message"
+                placeholder="Enter message here..."
+                value={this.state.message}
+                onChange={this.handleMessage}
+              ></textarea>
+              <span id="contact-form-buttons">
+                <button
+                  type="submit"
+                  onClick={e => {
+                    this.handleSubmit(e);
+                  }}
+                >
+                  Send
+                </button>
+                <button type="button" onClick={this.resetState}>
+                  Clear Form
+                </button>
+              </span>
+            </span>
+          </form>
+        ) : (
+          <div id="form-confirmation">
+            Thank you for contacting us. We will get in touch with you as soon
+            as we can.
+          </div>
+        )}
+      </>
     );
   }
 }

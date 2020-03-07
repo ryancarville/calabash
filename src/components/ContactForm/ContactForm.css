@@ -82,7 +82,17 @@
   background-color: limegreen;
   color: yellow;
 }
-
+#form-confirmation {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 50px;
+}
 @media only screen and (min-width: 700px) {
   #booking-form {
     width: 70%;
@@ -165,5 +175,8 @@
   #booking-form button:hover {
     background-color: limegreen;
     color: yellow;
+  }
+  #form-confirmation {
+    width: 40%;
   }
 }
