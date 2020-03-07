@@ -52,7 +52,7 @@ export default function Defender(porps) {
           ease and style.
         </p>
       </article>
-      <ImageGallery items={images} lazyLoad={true} />
+      <ImageGallery items={images} />
     </section>
   );
 }

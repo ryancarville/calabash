@@ -62,7 +62,6 @@ export default class Slideshow extends Component {
         showThumbnails={false}
         id="the-house-slideshow"
         autoPlay={this.props.autoPlay}
-        lazyLoad={true}
       />
     );
   }
