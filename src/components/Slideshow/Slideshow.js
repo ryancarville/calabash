@@ -55,12 +55,12 @@ export default class Slideshow extends Component {
   render() {
     return (
       <ImageGallery
+        id="the-house-slideshow"
         items={images}
         showBullets={true}
         slideDuration={1000}
         slideInterval={3000}
         showThumbnails={false}
-        id="the-house-slideshow"
         autoPlay={this.props.autoPlay}
       />
     );

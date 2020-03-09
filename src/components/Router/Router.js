@@ -8,6 +8,7 @@ import Gallery from "../Gallery/Gallery";
 import Reservations from "../Reservations/Reservations";
 import OurStory from "../OurStory/OurStory";
 import NotFound from "../NotFound/NotFound";
+import GuestLogin from "../GuestLogin/GuestLogin";
 export default function Router(props) {
   return (
     <Switch>
@@ -17,6 +18,7 @@ export default function Router(props) {
       <Route path="/the-island" component={Island} exact />
       <Route path="/gallery" component={Gallery} exact />
       <Route path="/reservations" component={Reservations} exact />
+      <Route path="/login" component={GuestLogin} exact />
       <Route path="/our-story" component={OurStory} exact />
       <Route component={NotFound} />
     </Switch>

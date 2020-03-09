@@ -13,7 +13,7 @@ const images = [
     thumbnail: img2
   }
 ];
-export default function Defender(porps) {
+export default function Defender(props) {
   return (
     <section id="defender-sec">
       <article id="defender-intro">
@@ -42,17 +42,27 @@ export default function Defender(porps) {
           </a>
         </aside>
       </article>
-      <article id="about-the-defender">
-        <header>
-          <h2>Enjoy the Drive</h2>
-        </header>
-        <p>
-          This restored 1987 Land Rover Defender 90 is like a kid on christmas
-          morning. For $40/day you can cruise the island roads and beaches with
-          ease and style.
-        </p>
-      </article>
-      <ImageGallery items={images} />
+
+      <div id="defender-gallery">
+        <ImageGallery items={images} />
+        <article id="about-the-defender">
+          <header>
+            <h2>Enjoy the Drive</h2>
+          </header>
+          <p>
+            This restored 1987 Land Rover Defender 90 is like a kid on christmas
+            morning. <br />
+            For $40/day you can cruise the island roads and beaches with ease
+            and style.
+          </p>
+          <ul>
+            <li>Seat up to 6 adults</li>
+            <li>Powerful 300TDI Diesel Engine</li>
+            <li>5-speed manual transmission</li>
+            <li>All-time Four wheel drive (High/Low Gear selector)</li>
+          </ul>
+        </article>
+      </div>
     </section>
   );
 }

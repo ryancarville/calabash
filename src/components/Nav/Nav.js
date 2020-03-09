@@ -38,6 +38,14 @@ class Nav extends Component {
       });
     }, 1000);
   };
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      if (window.scrollY >= 80) {
+        this.closeMenu();
+      }
+    });
+  }
+
   render() {
     return (
       <>

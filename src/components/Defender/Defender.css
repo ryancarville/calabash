@@ -40,6 +40,18 @@
   align-items: center;
   padding: 20px;
 }
+#defender-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+#defender-gallery .image-gallery {
+  width: 50%;
+}
 
 @media only screen and (min-width: 700px) {
   #defender-intro {
