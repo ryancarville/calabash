@@ -6,27 +6,40 @@ export default class GuestLogin extends Component {
     super(props);
     this.state = {
       userEmail: "",
-      pass: ""
+      error: null
     };
   }
+  resetState = () => {
+    this.setState({
+      userEmail: "",
+      error: null
+    });
+  };
   handleEmail = e => {
     this.setState({
       userEmail: e.target.value
     });
   };
-  handlePass = e => {
-    this.setState({
-      pass: e.target.value
-    });
-  };
+
   handleSubmit = e => {
     e.preventDefault();
-    window.alert("Server Not Created Yet");
+    this.setState({
+      error: "Server has yet to be created."
+    });
   };
   render() {
-    return (
-      <section id="login-sec">
-        <form onSubmit={this.handleSubmit}>
+    return this.state.error ? (
+      <section className="login-sec">
+        <div className="form-wrapper">
+          <p>{this.state.error}</p>
+          <button className="guest-login-button" onClick={this.resetState}>
+            Go Back
+          </button>
+        </div>
+      </section>
+    ) : (
+      <section className="login-sec">
+        <form className="form-wrapper" onSubmit={this.handleSubmit}>
           <header>
             <h2>Log In</h2>
           </header>
@@ -34,20 +47,17 @@ export default class GuestLogin extends Component {
             type="email"
             name="email"
             id="guest-email"
-            placeholder="Email Address"
+            placeholder="Email Address Used For Booking Confirmation"
             require
             onChange={this.handleEmail}
           />
-          <input
-            type="password"
-            name="pass"
-            id="guest-pass"
-            placeholder="Password"
-            required
-            onChange={this.handlePass}
-          />
-          <button type="submit">Log In</button>
-          <button type="reset">Clear Form</button>
+
+          <button className="guest-login-button" type="submit">
+            Log In
+          </button>
+          <button className="guest-login-button" type="reset">
+            Clear Form
+          </button>
         </form>
       </section>
     );
