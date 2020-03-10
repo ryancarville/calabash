@@ -112,14 +112,32 @@ export default class Dashboard extends Component {
         <div id="dash-main">
           <aside id="dash-nav">
             <ul>
-              <li onClick={() => this.handleView("welcome")}>Welcome</li>
-              <li onClick={() => this.handleView("rules")}>House Rules</li>
-              <li onClick={() => this.handleView("wifi")}>Wifi Info</li>
-              <li onClick={() => this.handleView("entertainment")}>
-                Entertainment
+              <li onClick={() => this.handleView("welcome")}>
+                <i className="fas fa-hospital-symbol"></i>
+                <br />
+                Welcome
               </li>
-              <li onClick={() => this.handleView("dir")}>Directory</li>
-              <li onClick={() => this.handleView("help")}>Help</li>
+              <li onClick={() => this.handleView("rules")}>
+                <i className="far fa-file-alt"></i>
+                <br />
+                House Rules
+              </li>
+              <li onClick={() => this.handleView("wifi")}>
+                <i className="fas fa-wifi"></i>
+                <br />
+                Wifi Info
+              </li>
+
+              <li onClick={() => this.handleView("dir")}>
+                <i className="far fa-address-card"></i>
+                <br />
+                Directory
+              </li>
+              <li onClick={() => this.handleView("help")}>
+                <i className="far fa-question-circle"></i>
+                <br />
+                Help
+              </li>
             </ul>
           </aside>
           <article id="dash-content">
