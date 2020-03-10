@@ -26,6 +26,7 @@ export default class Footer extends Component {
   }
 
   render() {
+    const loggedIn = window.sessionStorage.getItem("loggedIn");
     return (
       <footer id="footer">
         <article id="footer-contact-info">
@@ -97,9 +98,19 @@ export default class Footer extends Component {
           <li>
             <Link to="our-story">Our Story</Link>
           </li>
-          <li>
-            <Link to="login">Guest Login</Link>
-          </li>
+          {loggedIn ? (
+            <li>
+              <Link to="/dashboard" onClick={this.openMenu}>
+                Dashboard
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link to="/login" onClick={this.openMenu}>
+                Guest Login
+              </Link>
+            </li>
+          )}
         </ul>
         <br />
         <span id="copyright">

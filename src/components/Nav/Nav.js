@@ -47,6 +47,7 @@ class Nav extends Component {
   }
 
   render() {
+    const loggedIn = window.sessionStorage.getItem("loggedIn");
     return (
       <>
         <Link to="/" onClick={this.closeMenu} id="logo">
@@ -93,11 +94,20 @@ class Nav extends Component {
                   Rates + Reservations
                 </Link>
               </li>
-              <li>
-                <Link to="/login" onClick={this.openMenu}>
-                  Guest Login
-                </Link>
-              </li>
+
+              {loggedIn ? (
+                <li>
+                  <Link to="/dashboard" onClick={this.openMenu}>
+                    Dashboard
+                  </Link>
+                </li>
+              ) : (
+                <li>
+                  <Link to="/login" onClick={this.openMenu}>
+                    Guest Login
+                  </Link>
+                </li>
+              )}
             </ul>
           ) : null}
           <i

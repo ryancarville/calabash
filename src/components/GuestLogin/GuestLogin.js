@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./GuestLogin.css";
 
 export default class GuestLogin extends Component {
@@ -6,12 +8,14 @@ export default class GuestLogin extends Component {
     super(props);
     this.state = {
       userEmail: "",
+      loggedIn: false,
       error: null
     };
   }
   resetState = () => {
     this.setState({
       userEmail: "",
+      loggedIn: false,
       error: null
     });
   };
@@ -23,18 +27,34 @@ export default class GuestLogin extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.setState({
-      error: "Server has yet to be created."
-    });
+    if (this.state.userEmail === "testUser@gmail.com") {
+      window.sessionStorage.setItem("loggedIn", true);
+      window.sessionStorage.setItem("guestName", 'Test User');
+      setTimeout(() => {
+        this.setState({
+          loggedIn: true
+        });
+      }, 50);
+    } else {
+      this.setState({
+        error: "Email is incorrect"
+      });
+    }
   };
   render() {
+    if (this.state.loggedIn) {
+      return <Redirect to="/dashboard" />;
+    }
     return this.state.error ? (
       <section className="login-sec">
         <div className="form-wrapper">
           <p>{this.state.error}</p>
           <button className="guest-login-button" onClick={this.resetState}>
-            Go Back
+            Try Again
           </button>
+          <Link className="guest-login-button" to="/">
+            Homepage
+          </Link>
         </div>
       </section>
     ) : (

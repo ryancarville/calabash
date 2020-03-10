@@ -9,9 +9,12 @@ import Reservations from "../Reservations/Reservations";
 import OurStory from "../OurStory/OurStory";
 import NotFound from "../NotFound/NotFound";
 import GuestLogin from "../GuestLogin/GuestLogin";
+import { PrivateRoute } from "./PrivateRoute";
+import Dashboard from "../Dashboard/Dashboard";
 export default function Router(props) {
   return (
     <Switch>
+      <PrivateRoute path="/dashboard" component={Dashboard} exact />
       <Route path="/" component={Home} exact />
       <Route path="/the-house" component={House} exact />
       <Route path="/the-defender" component={Defender} exact />
