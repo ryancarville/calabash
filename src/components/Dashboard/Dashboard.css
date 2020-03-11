@@ -47,14 +47,20 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  padding: 0;
+  margin: 0;
 }
 #house-rules-nav li {
   cursor: pointer;
   margin: 5px;
   padding: 10px;
 }
+#wifi-sec div {
+  display: flex;
+  flex-direction: column;
+}
 #wifi-sec span {
-  width: 350px;
+  width: 100%;
   margin-top: 20px;
   padding: 20px;
   background-color: rgb(65, 151, 255);
@@ -101,5 +107,12 @@
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+  }
+  #wifi-sec div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #wifi-sec div span {
+    width: 350px;
   }
 }

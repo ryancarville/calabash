@@ -1,7 +1,7 @@
 import React from "react";
 export default function WifiInfo(props) {
   return (
-    <article id='wifi-sec' style={{ textAlign: "center" }}>
+    <article id="wifi-sec" style={{ textAlign: "center" }}>
       <header>
         <h2>Wifi Information</h2>
       </header>
@@ -10,12 +10,7 @@ export default function WifiInfo(props) {
         <br />
         You will find all the connection information here.
       </p>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around"
-        }}
-      >
+      <div>
         <span>
           <h3>Wireless Network 2.8Ghz</h3>
           <i>Most coverage around the property</i>
