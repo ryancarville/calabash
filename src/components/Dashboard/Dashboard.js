@@ -104,7 +104,11 @@ export default class Dashboard extends Component {
     return (
       <section>
         <header id="dash-header">
-          <h1>Dashboard</h1>
+          <h2>
+            Welcome to Calabash Villa{" "}
+            {window.sessionStorage.getItem("guestName")}
+          </h2>
+
           <button onClick={() => this.logOut()} className="logOut-button">
             Log Out
           </button>

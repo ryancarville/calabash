@@ -39,11 +39,9 @@ export default class Reservations extends Component {
           </aside>
         </header>
         <article id="res-months">
-          <span>
-            <center>
-              <h3>High Season</h3>
-            </center>
-            <aside id="high-season">
+          <span id="high-season">
+            <h3>High Season</h3>
+            <aside>
               <span>
                 <h4>December - April</h4>
                 <p>Entire Villa: $2500/week</p>
@@ -51,7 +49,7 @@ export default class Reservations extends Component {
                 <p>Garden Flat: $1200/week</p>
               </span>
               <span>
-                <h4>Christmas and Easter period</h4>
+                <h4>Christmas & Easter</h4>
                 <p>Entire Villa: $3500/week</p>
                 <p>Penthouse Flat: $2000/week</p>
                 <p>Garden Flat: $1600/week</p>
@@ -60,11 +58,13 @@ export default class Reservations extends Component {
           </span>
 
           <span id="low-season">
-            <h3>Low Season</h3>
-            <h4>May - November</h4>
-            <p>Entire Villa: $1800/week</p>
-            <p>Penthouse Flat: $1100/week</p>
-            <p>Garden Flat: $800/week</p>
+            <aside>
+              <h3>Low Season</h3>
+              <h4>May - November</h4>
+              <p>Entire Villa: $1800/week</p>
+              <p>Penthouse Flat: $1100/week</p>
+              <p>Garden Flat: $800/week</p>
+            </aside>
           </span>
         </article>
 

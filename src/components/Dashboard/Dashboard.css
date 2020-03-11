@@ -42,6 +42,27 @@
   width: 100%;
   padding: 10px;
 }
+#house-rules-nav {
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+#house-rules-nav li {
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+}
+#wifi-sec span {
+  width: 350px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(65, 151, 255);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 10px 30px 10px lightgray;
+}
 @media only screen and (min-width: 700px) {
   #dash-header {
     display: flex;
