@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import Welcome from "./Welcome";
 import HouseRules from "./HouseRules";
 import WifiInfo from "./WifiInfo";
-import Enertainment from "./Entertainment";
+import Activities from "./Activities";
 import Directory from "./Directory";
 import Help from "./Help";
 import "./Dashboard.css";
@@ -13,10 +13,10 @@ export default class Dashboard extends Component {
     super(props);
     this.state = {
       welcome: true,
-      houseRules: false,
-      wifiInfo: false,
-      entertainment: false,
-      directory: false,
+      rules: false,
+      wifi: false,
+      activities: false,
+      dir: false,
       help: false,
       loggedOut: false
     };
@@ -30,71 +30,16 @@ export default class Dashboard extends Component {
     }, 50);
   };
   handleView = view => {
-    if (view === "welcome") {
-      this.setState({
-        welcome: true,
-        houseRules: false,
-        wifiInfo: false,
-        entertainment: false,
-        directory: false,
-        help: false,
-        loggedOut: false
-      });
-    }
-    if (view === "rules") {
-      this.setState({
-        welcome: false,
-        houseRules: true,
-        wifiInfo: false,
-        entertainment: false,
-        directory: false,
-        help: false,
-        loggedOut: false
-      });
-    }
-    if (view === "wifi") {
-      this.setState({
-        welcome: false,
-        houseRules: false,
-        wifiInfo: true,
-        entertainment: false,
-        directory: false,
-        help: false,
-        loggedOut: false
-      });
-    }
-    if (view === "entertainment") {
-      this.setState({
-        welcome: false,
-        houseRules: false,
-        wifiInfo: false,
-        entertainment: true,
-        directory: false,
-        help: false,
-        loggedOut: false
-      });
-    }
-    if (view === "dir") {
-      this.setState({
-        welcome: false,
-        houseRules: false,
-        wifiInfo: false,
-        entertainment: false,
-        directory: true,
-        help: false,
-        loggedOut: false
-      });
-    }
-    if (view === "help") {
-      this.setState({
-        welcome: false,
-        houseRules: false,
-        wifiInfo: false,
-        entertainment: false,
-        directory: false,
-        help: true,
-        loggedOut: false
-      });
+    for (let [key] of Object.entries(this.state)) {
+      if (key === view) {
+        const active = {};
+        active[key] = true;
+        this.setState(active);
+      } else {
+        const notActive = {};
+        notActive[key] = false;
+        this.setState(notActive);
+      }
     }
   };
   render() {
@@ -131,7 +76,11 @@ export default class Dashboard extends Component {
                 <br />
                 Wifi Info
               </li>
-
+              <li onClick={() => this.handleView("activities")}>
+                <i className="fas fa-hiking"></i>
+                <br />
+                Activities
+              </li>
               <li onClick={() => this.handleView("dir")}>
                 <i className="far fa-address-card"></i>
                 <br />
@@ -146,10 +95,10 @@ export default class Dashboard extends Component {
           </aside>
           <article id="dash-content">
             {this.state.welcome ? <Welcome /> : null}
-            {this.state.houseRules ? <HouseRules /> : null}
-            {this.state.wifiInfo ? <WifiInfo /> : null}
-            {this.state.entertainment ? <Enertainment /> : null}
-            {this.state.directory ? <Directory /> : null}
+            {this.state.rules ? <HouseRules /> : null}
+            {this.state.wifi ? <WifiInfo /> : null}
+            {this.state.activities ? <Activities /> : null}
+            {this.state.dir ? <Directory /> : null}
             {this.state.help ? <Help /> : null}
           </article>
         </div>

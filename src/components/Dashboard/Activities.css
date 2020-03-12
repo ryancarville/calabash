@@ -1,0 +1,29 @@
+#dash-activities {
+  padding-left: 20px;
+}
+#dash-activities header {
+  background-color: rgb(150, 231, 255);
+  color: white;
+  margin-left: -35px;
+  padding: 25px;
+  text-align: center;
+}
+#dash-activities-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+#dash-activities-nav ul li {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+#dash-activities-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  padding: 20px;
+  grid-gap: 20px;
+}
+#dash-activities-content span p {
+  margin: 0;
+}

@@ -3,7 +3,7 @@ export default function Intro(props) {
   return (
     <article>
       <header>
-        <h2>House Rules</h2>
+        <h2>General</h2>
       </header>
       <p>
         Welcome to Calabash Villa! We know there are many beautiful properties

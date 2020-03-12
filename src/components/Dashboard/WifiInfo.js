@@ -1,15 +1,17 @@
 import React from "react";
+import "./WifiInfo.css";
 export default function WifiInfo(props) {
   return (
-    <article id="wifi-sec" style={{ textAlign: "center" }}>
+    <article id="wifi-sec">
       <header>
         <h2>Wifi Information</h2>
+        <p>
+          Calabash offers high speed internet access all around the property.{" "}
+          <br />
+          You will find all the connection information here.
+        </p>
       </header>
-      <p>
-        Calabash offers high speed internet access all around the property.{" "}
-        <br />
-        You will find all the connection information here.
-      </p>
+
       <div>
         <span>
           <h3>Wireless Network 2.8Ghz</h3>
