@@ -29,7 +29,8 @@ export default class GuestLogin extends Component {
     e.preventDefault();
     if (this.state.userEmail === "testUser@gmail.com") {
       window.sessionStorage.setItem("loggedIn", true);
-      window.sessionStorage.setItem("guestName", 'Test User');
+      window.sessionStorage.setItem("guestName", "Test User");
+      window.sessionStorage.setItem("email", "testUser@gmail.com");
       setTimeout(() => {
         this.setState({
           loggedIn: true

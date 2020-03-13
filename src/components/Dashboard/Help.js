@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./Help.css";
+const API = "https://powerful-garden-10065.herokuapp.com/calabashEmail/help";
 export default class Help extends Component {
   constructor(props) {
     super(props);
     this.state = {
       reason: "",
-      name: window.sessionStorage.getItem("guestName"),
+      fullName: window.sessionStorage.getItem("guestName"),
+      email: window.sessionStorage.getItem("email"),
       message: "",
+      mailSent: false,
       error: null
     };
   }
@@ -22,7 +25,30 @@ export default class Help extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-    fetch();
+    let data = this.state;
+    console.log(JSON.stringify(data));
+    fetch(`${API}`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "Access-Control-Allow-Origin": "https://calabashvillabequia.com"
+      },
+      body: JSON.stringify(data),
+      mode: "cors"
+    })
+      .then(result => {
+        console.log(result);
+        if (!result.ok) {
+          this.setState({
+            error: result.error
+          });
+        } else {
+          this.setState({
+            mailSent: result.ok
+          });
+        }
+      })
+      .catch(error => this.setState({ error: error.message }));
   };
   render() {
     return (
@@ -42,7 +68,7 @@ export default class Help extends Component {
           </div>
         ) : null}
         <aside>
-          {!this.state.messageSent ? (
+          {!this.state.mailSent ? (
             <>
               <form onSubmit={e => this.handleSubmit(e)}>
                 <select
@@ -68,8 +94,14 @@ export default class Help extends Component {
                   onChange={this.handleMsg}
                   required
                 ></textarea>
-                <i style={{ fontSize: "14px", float: "right", width: "100%" }}>
-                  <b style={{fontSize:'20px'}}>*</b> denotes required fields
+                <i
+                  style={{
+                    fontSize: "14px",
+                    float: "right",
+                    width: "100%"
+                  }}
+                >
+                  <b style={{ fontSize: "20px" }}>*</b> denotes required fields
                 </i>
                 <button type="submit">Send</button>
                 <button type="reset">Clear Form</button>
