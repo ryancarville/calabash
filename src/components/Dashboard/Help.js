@@ -108,10 +108,10 @@ export default class Help extends Component {
               </form>
             </>
           ) : (
-            <div>
+            <div id="help-form-confirmation">
               <p>
-                Your message has been successfully submitted. Make yourself a
-                drink and we will response before you finish it.
+                Your message has been successfully submitted. <br />
+                Make yourself a drink and we will response before you finish it.
               </p>
             </div>
           )}
