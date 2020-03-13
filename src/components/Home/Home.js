@@ -10,10 +10,27 @@ export default function Home(props) {
     <section id="home-sec">
       <article id="home-main">
         <Slideshow autoPlay={true} />
+        <header>
+          <h2>Welcome to Calabash Villa!</h2>
+          <p>
+            A luxury rental house on the tropical island of Bequia, Saint
+            Vincent and the Grenadines. Here you will find all the information
+            about the house, the Land Rover Defender and all the island has to
+            offer. Should you have any questions you can use the{" "}
+            <Link to="/reservations#booking-form">Booking Enquiry Form</Link> or
+            email us at{" "}
+            <a href="mailto:hello@calabashvillabequia.com?subject=Question from CalabashVillaBequia.com">
+              hello@calabashvillabequia.com
+            </a>
+            . <br />
+            We look forward to sharing the well kept slice of paradise with you!
+          </p>
+        </header>
         <a href="#home-house">
           <i className="fas fa-angle-double-down downArrow" />
         </a>
       </article>
+
       <article id="home-house">
         <header>
           <i style={{ fontSize: 30 }} className="fas fa-home"></i>

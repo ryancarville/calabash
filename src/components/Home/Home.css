@@ -6,11 +6,13 @@
   width: 100%;
   margin-top: 0px;
 }
+
 #home-sec {
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
 #home-main {
+  text-align: center;
   height: auto;
   display: flex;
   flex-direction: column;
