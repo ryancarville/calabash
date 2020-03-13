@@ -43,6 +43,7 @@
 #defender-gallery {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   margin-top: 100px;
@@ -50,7 +51,7 @@
 }
 
 #defender-gallery .image-gallery {
-  width: 50%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 700px) {
@@ -91,10 +92,24 @@
     cursor: pointer;
     display: block;
   }
+  #defender-gallery {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(97, 168, 255);
+    padding: 0px;
+    margin: 0px;
+    color: white;
+  }
+  #defender-gallery .image-gallery {
+    margin: 50px;
+    width: 40%;
+  }
+
   #about-the-defender {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: -100px;
   }
 }

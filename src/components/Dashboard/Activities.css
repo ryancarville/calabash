@@ -1,22 +1,25 @@
-#dash-activities {
-  padding-left: 20px;
-}
 #dash-activities header {
   background-color: rgb(150, 231, 255);
   color: white;
-  margin-left: -35px;
-  padding: 25px;
+  padding: 20px;
   text-align: center;
 }
 #dash-activities-nav ul {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  padding: 0;
 }
 #dash-activities-nav ul li {
   text-align: center;
   padding: 10px;
   cursor: pointer;
+}
+#dash-activities-content span h4 {
+  margin: 0;
 }
 #dash-activities-content {
   display: grid;
@@ -26,4 +29,18 @@
 }
 #dash-activities-content span p {
   margin: 0;
+}
+@media only screen and (min-width: 700px) {
+  #dash-activities header {
+    margin-left: -35px;
+  }
+  #dash-activities-nav ul {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
 }

@@ -1,16 +1,19 @@
 #dash-dir {
-  text-align: left;
-  padding-left: 20px;
+  text-align: center;
 }
 #dash-dir header {
   background-color: rgb(150, 231, 255);
-  margin-left: -35px;
+
   padding: 20px;
   text-align: center;
   color: white;
 }
 #dash-dir-nav ul {
+  width: 95%;
   list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -37,4 +40,9 @@
 }
 #dash-dir-content span p {
   margin: 0;
+}
+@media only screen and (min-width: 700px) {
+  #dash-dir header {
+    margin-left: -35px;
+  }
 }

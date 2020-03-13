@@ -37,7 +37,7 @@ export default function Defender(props) {
             <br />
             Drive a piece of history in paradise.
           </p>
-          <a href="#about-the-defender" className="home-link">
+          <a href="#defender-gallery" className="home-link">
             Learn More
           </a>
         </aside>

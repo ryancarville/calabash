@@ -24,7 +24,7 @@ class Nav extends Component {
         this.setState({
           isActive: false
         });
-      }, 1000);
+      }, 50);
     }
   };
   closeMenu = () => {
@@ -36,7 +36,7 @@ class Nav extends Component {
       this.setState({
         isActive: false
       });
-    }, 1000);
+    }, 50);
   };
   componentDidMount() {
     document.addEventListener("scroll", () => {

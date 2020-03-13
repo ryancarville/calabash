@@ -5,9 +5,11 @@
 .home-image {
   width: 100%;
   margin-top: 0px;
+}
+#home-sec {
+  opacity: 0;
   animation: fadeIn 1s forwards;
 }
-
 #home-main {
   height: auto;
   display: flex;
