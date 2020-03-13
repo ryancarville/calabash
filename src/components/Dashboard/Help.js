@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Help.css";
-const API = "https://powerful-garden-10065.herokuapp.com/calabashEmail/help";
+const API = "https://powerful-garden-10065.herokuapp.com/calabash/help";
 export default class Help extends Component {
   constructor(props) {
     super(props);
