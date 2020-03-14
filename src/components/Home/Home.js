@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import defender from "./images/defender/2.jpg";
-import island from "./images/island/bequia-image.jpg";
+import defender from "./images/defender/land-rover-defender-on-palm-beach-2.jpg";
+import island from "./images/island/bequia-harbor.jpg";
 import Slideshow from "../Slideshow/Slideshow";
 import "./Home.css";
 
@@ -79,7 +79,11 @@ export default function Home(props) {
             Check It Out
           </Link>
         </aside>
-        <img src={defender} id="home-the-defender-img" alt="defender"></img>
+        <img
+          src={defender}
+          id="home-the-defender-img"
+          alt="land rover defender on palm beach"
+        ></img>
       </article>
       <article id="home-bequia">
         <aside>
@@ -124,7 +128,7 @@ export default function Home(props) {
           </span>
         </aside>
         <figure>
-          <img src={island} alt="bequia" id="home-bequia-img" />
+          <img src={island} alt="bequia harbor" id="home-bequia-img" />
         </figure>
       </article>
       <article id="home-our-story">

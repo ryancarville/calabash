@@ -1,23 +1,27 @@
 import React from "react";
 import "./Defender.css";
 import ImageGallery from "react-image-gallery";
-import img1 from "./images/1.jpg";
-import img2 from "./images/2.jpg";
+import img1 from "./images/land-rover-defender-on-palm-beach-1.jpg";
+import img2 from "./images/land-rover-defender-on-palm-beach-2.jpg";
 const images = [
   {
     original: img1,
-    thumbnail: img1
+    thumbnail: img1,
+    originalAlt: "land rover defender on palm beach",
+    thumbnailAlt: "land rover defender on palm beach"
   },
   {
     original: img2,
-    thumbnail: img2
+    thumbnail: img2,
+    originalAlt: "land rover defender on palm beach",
+    thumbnailAlt: "land rover defender on palm beach"
   }
 ];
 export default function Defender(props) {
   return (
     <section id="defender-sec">
       <article id="defender-intro">
-        <img src={img1} alt="defender-1" />
+        <img src={img1} alt="land rover defender on palm beach" />
 
         <aside>
           <h1>
