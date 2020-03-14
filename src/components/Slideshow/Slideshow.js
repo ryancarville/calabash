@@ -70,16 +70,8 @@ const images = [
   }
 ];
 export default class Slideshow extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  _ImageLoaded = () => {
-    this.setState({
-      loaded: true
-    });
-  };
   render() {
+    
     return (
       <ImageGallery
         id="the-house-slideshow"
@@ -88,7 +80,6 @@ export default class Slideshow extends Component {
         slideDuration={1000}
         slideInterval={4000}
         showThumbnails={false}
-        autoPlay={this.props.autoPlay}
       />
     );
   }
