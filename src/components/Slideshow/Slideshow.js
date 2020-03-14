@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import ImageGallery from "react-image-gallery";
-import img1 from "./images/calabash-villa-exterior-1.jpf";
-import img2 from "./images/calabash-villa-exterior-2.jpf";
-import img3 from "./images/calabash-villa-exterior-3.jpf";
-import img4 from "./images/calabash-villa-exterior-4.jpf";
-import img5 from "./images/calabash-villa-exterior-5.jpf";
-import img6 from "./images/calabash-villa-exterior-6.jpf";
-import img7 from "./images/calabash-villa-exterior-7.jpf";
-import img8 from "./images/calabash-villa-exterior-8.jpf";
-import img9 from "./images/calabash-villa-exterior-9.jpf";
+import img1 from "./images/calabash-villa-exterior-1.jpg";
+import img2 from "./images/calabash-villa-exterior-2.jpg";
+import img3 from "./images/calabash-villa-exterior-3.jpg";
+import img4 from "./images/calabash-villa-exterior-4.jpg";
+import img5 from "./images/calabash-villa-exterior-5.jpg";
+import img6 from "./images/calabash-villa-exterior-6.jpg";
+import img7 from "./images/calabash-villa-exterior-7.jpg";
+import img8 from "./images/calabash-villa-exterior-8.jpg";
+import img9 from "./images/calabash-villa-exterior-9.jpg";
 
 import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import "./Slideshow.css";
@@ -70,11 +70,21 @@ const images = [
   }
 ];
 export default class Slideshow extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  _ImageLoaded = () => {
+    this.setState({
+      loaded: true
+    });
+  };
   render() {
     return (
       <ImageGallery
         id="the-house-slideshow"
         items={images}
+        lazyLoad={true}
         showBullets={true}
         slideDuration={1000}
         slideInterval={3000}
