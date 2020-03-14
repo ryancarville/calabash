@@ -84,10 +84,9 @@ export default class Slideshow extends Component {
       <ImageGallery
         id="the-house-slideshow"
         items={images}
-        lazyLoad={true}
         showBullets={true}
         slideDuration={1000}
-        slideInterval={3000}
+        slideInterval={4000}
         showThumbnails={false}
         autoPlay={this.props.autoPlay}
       />
