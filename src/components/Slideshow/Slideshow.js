@@ -15,9 +15,10 @@ import "./Slideshow.css";
 
 export default class Slideshow extends Component {
   makeImages = () => {
+    const img = "img";
     let images = [];
     for (let i = 1; i <= 9; i++) {
-      let name = `img` + [i];
+      let name = img[i];
       images.push({
         original: name,
         thumbnail: name,
