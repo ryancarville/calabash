@@ -17,7 +17,7 @@ export default class Slideshow extends Component {
   makeImages = () => {
     const imagesOG = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
     let images = [];
-    for (let i = 1; i <= 9; i++) {
+    for (let i = 0; i < 9; i++) {
       images.push({
         original: imagesOG[i],
         thumbnail: imagesOG[i],
