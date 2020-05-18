@@ -20,6 +20,9 @@
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
+#home-main header {
+  padding: 20px;
+}
 #home-house {
   width: 100%;
   text-align: center;

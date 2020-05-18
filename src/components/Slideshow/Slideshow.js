@@ -13,69 +13,25 @@ import img9 from "./images/calabash-villa-exterior-9.jpg";
 import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import "./Slideshow.css";
 
-const images = [
-  {
-    original: img1,
-    thumbnail: img1,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img2,
-    thumbnail: img2,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img3,
-    thumbnail: img3,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img4,
-    thumbnail: img4,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img5,
-    thumbnail: img5,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img6,
-    thumbnail: img6,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img7,
-    thumbnail: img7,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img8,
-    thumbnail: img8,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  },
-  {
-    original: img9,
-    thumbnail: img9,
-    originalAlt: "Exterior render of Calabash Villa",
-    thumbnailAlt: "Exterior render of Calabash Villa"
-  }
-];
 export default class Slideshow extends Component {
+  makeImages = () => {
+    let images = [];
+    for (let i = 1; i <= 9; i++) {
+      images.push({
+        original: img1,
+        thumbnail: img1,
+        originalAlt: `Exterior render of Calabash Villa ` + i,
+        thumbnailAlt: `Exterior render of Calabash Villa` + i
+      });
+    }
+    return images;
+  };
+
   render() {
-    
     return (
       <ImageGallery
         id="the-house-slideshow"
-        items={images}
+        items={this.makeImages()}
         showBullets={true}
         slideDuration={1000}
         slideInterval={4000}
