@@ -15,12 +15,12 @@ import "./Slideshow.css";
 
 export default class Slideshow extends Component {
   makeImages = () => {
+    const imagesOG = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
     let images = [];
     for (let i = 1; i <= 9; i++) {
-      let name = "img" + [i];
       images.push({
-        original: name,
-        thumbnail: name,
+        original: imagesOG[i],
+        thumbnail: imagesOG[i],
         originalAlt: `Exterior render of Calabash Villa ` + i,
         thumbnailAlt: `Exterior render of Calabash Villa` + i,
       });
