@@ -17,11 +17,12 @@ export default class Slideshow extends Component {
   makeImages = () => {
     let images = [];
     for (let i = 1; i <= 9; i++) {
+      let name = `img` + [i];
       images.push({
-        original: img1,
-        thumbnail: img1,
+        original: name,
+        thumbnail: name,
         originalAlt: `Exterior render of Calabash Villa ` + i,
-        thumbnailAlt: `Exterior render of Calabash Villa` + i
+        thumbnailAlt: `Exterior render of Calabash Villa` + i,
       });
     }
     return images;
