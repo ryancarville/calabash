@@ -41,8 +41,8 @@ export default class Footer extends Component {
             </span>
             <span>
               <i className="far fa-paper-plane"></i>{" "}
-              <a href="mailto:hello@calabashvillabeqaui.com">
-                hello@calabashvillabequia.com
+              <a href="mailto:calabashbequia@gmail.com">
+                calabashbequia@gmail.com
               </a>
             </span>
             <span>
