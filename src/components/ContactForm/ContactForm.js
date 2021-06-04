@@ -67,7 +67,7 @@ export default class ContactForm extends Component {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        "Access-Control-Allow-Origin": "https://calabashvillabequia.com"
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(data),
       mode: "cors"
@@ -93,7 +93,7 @@ export default class ContactForm extends Component {
           <div style={{ textAlign: "center", marginTop: "5%" }}>
             We are sorry for the inconvenience, but something went wrong with
             your submission. <br /> Please email us at{" "}
-            <a href="mailto:hello@calabashvillabequia?subject=Website Enquiry">
+            <a href="mailto:calabashbequia@gmail.com?subject=Website Enquiry">
               hello@calabashvillabequia.com
             </a>
           </div>
