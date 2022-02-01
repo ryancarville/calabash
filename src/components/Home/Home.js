@@ -9,7 +9,9 @@ export default function Home(props) {
   return (
     <section id="home-sec">
       <article id="home-main">
-        <Slideshow />
+        <article id="home-main-slideshow">
+          <Slideshow />
+        </article>
         <header>
           <h2>Welcome to Calabash Villa!</h2>
           <p>

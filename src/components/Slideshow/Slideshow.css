@@ -1,5 +1,14 @@
 div.image-gallery {
-  width: 100%;
-  margin: 0;
+  position: relative;
+  object-fit: cover;
+  max-width: 1300px;
+  max-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
+}
+
+.image-gallery-image {
+  object-fit: cover;
+  max-height: 500px;
 }
