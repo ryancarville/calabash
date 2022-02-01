@@ -21,7 +21,7 @@
   animation: fadeIn 0.5s forwards;
 }
 #home-main-slideshow {
-  height: 800px;
+  height: 500px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
@@ -146,8 +146,15 @@
 
   #home-main {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+  }
+  #home-main-slideshow {
+    width: 60%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #home-house {
     width: 100%;

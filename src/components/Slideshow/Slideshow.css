@@ -1,14 +1,13 @@
 div.image-gallery {
-  position: relative;
-  object-fit: cover;
-  max-width: 1300px;
-  max-height: 800px;
+  position: absolute;
+  width: 100%;
+  left: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
 }
 
-.image-gallery-image {
-  object-fit: cover;
-  max-height: 500px;
+@media only screen and (min-width: 700px) {
+  div.image-gallery {
+    position: relative;
+  }
 }
